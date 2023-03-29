@@ -1,0 +1,21 @@
+modules:
+  jira:issuePanel:
+    - key: helloworld-hello-world-panel
+      function: main
+      title: Forge app for suresh
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  jira:adminPage:
+    - key: helloworld-admin-page
+      function: adminPage
+      title: Admin Page of Suresh
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+    - key: adminPage
+      handler: index.adminRun
+app:
+  id: ari:cloud:ecosystem::app/8e3ac921-123e-403f-839e-5ddf7ba67da3
+permissions:
+  scopes:
+    - read:jira-work
